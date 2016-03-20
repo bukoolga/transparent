@@ -1,7 +1,9 @@
 var angular = require('angular');
 var material = require('angular-material');
+var route = require('angular-ui-router');
 var ngModule = angular.module('trappedAngular', [
-    'ngMaterial'
+    'ngMaterial',
+    'ui.router'
 ]);
 ngModule.config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
@@ -11,3 +13,4 @@ ngModule.config(function($mdThemingProvider) {
 
 require('./directives')(ngModule);
 require('./controllers')(ngModule);
+require('./routes')(ngModule);
