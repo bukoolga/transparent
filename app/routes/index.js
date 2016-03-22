@@ -8,5 +8,9 @@ module.exports = function(ngModule) {
                 url: '/',
                 templateUrl: 'index.html'
             })
+            .state('home.settings', {
+                url: '/settings',
+                templateUrl: 'views/settings.html'
+            });
     })
 };
