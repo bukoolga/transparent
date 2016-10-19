@@ -1,0 +1,33 @@
+{
+  "name": "transparent",
+  "version": "0.10.25",
+  "main": "app/index.js",
+  "dependencies": {
+    "angular": "^1.5.2"
+  },
+  "devDependencies": {
+    "angular-material": "^1.1.1",
+    "angular-ui-router": "^0.3.1",
+    "babel-core": "^6.17.0",
+    "jshint": "^2.9.3",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/.bin/webpack-dev-server --content-base app",
+    "bundle": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bukoolga/transparent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bukoolga/transparent/issues"
+  },
+  "homepage": "https://github.com/bukoolga/transparent#readme",
+  "description": ""
+}

@@ -1,0 +1,35 @@
+<div ng-controller="menuCtrl" layout="column" ng-cloak flex layout-fill>
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2 md-primary" md-component-id="left"
+                md-is-locked-open="$mdMedia('gt-md')" layout-fill>
+        <md-list>
+            <md-item class="md-left-menu-item" md-ink-ripple>
+                <a href="/settings">
+                    <md-item-content class="md-left-menu-item-content" layout="row" layout-align="start center"
+                                     flex="100">
+                        <div class="inset" flex="20">
+                            <img src="../static/images/icons/settings.png">
+                        </div>
+                        <div class="inset" flex="60">settings
+                        </div>
+                        <div class="inset" flex="20">
+                        </div>
+                    </md-item-content>
+                </a>
+            </md-item>
+            <md-item class="md-left-menu-item" md-ink-ripple>
+                <a href="#">
+                    <md-item-content class="md-left-menu-item-content" layout="row" layout-align="start center"
+                                     flex="100">
+                        <div class="inset" flex="20">
+                            <img src="../static/images/icons/account.png">
+                        </div>
+                        <div class="inset" flex="60">account
+                        </div>
+                        <div class="inset" flex="20">
+                        </div>
+                    </md-item-content>
+                </a>
+            </md-item>
+        </md-list>
+    </md-sidenav>
+</div>
