@@ -2,7 +2,6 @@ var angular = require('angular');
 var material = require('angular-material');
 var route = require('angular-ui-router');
 var ngModule = angular.module('transparent', [
-    'angular',
     'ngMaterial',
     'ui.router'
 ]);
