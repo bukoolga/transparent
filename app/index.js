@@ -7,8 +7,8 @@ var ngModule = angular.module('transparent', [
 ]);
 ngModule.config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-        .primaryPalette('teal')
-        .accentPalette('indigo');
+        .primaryPalette('grey')
+        .accentPalette('grey');
 });
 
 require('./directives')(ngModule);

@@ -2,7 +2,7 @@ a:hover {
     text-decoration: none;
 }
 .site-header {
-    background: #00A6CA none repeat scroll 0 0;
+    background: #607D8B none repeat scroll 0 0;
     /*padding: 10px;*/
 }
 .logo img {
@@ -19,6 +19,12 @@ md-item-content {
     margin: 0 10px;
     padding: 10px 0;
 }
+.md-left-menu-item a {
+    text-decoration: none;
+}
+md-list {
+    padding-top: 0;
+}
 md-sidenav {
-    background: #00a6ca none repeat scroll 0 0;
+    background: #607D8B none repeat scroll 0 0;
 }

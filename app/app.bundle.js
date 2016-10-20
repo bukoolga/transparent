@@ -53,8 +53,8 @@
 	]);
 	ngModule.config(function($mdThemingProvider) {
 	    $mdThemingProvider.theme('default')
-	        .primaryPalette('teal')
-	        .accentPalette('indigo');
+	        .primaryPalette('grey')
+	        .accentPalette('grey');
 	});
 
 	__webpack_require__(10)(ngModule);
@@ -74095,18 +74095,22 @@
 /***/ function(module, exports) {
 
 	module.exports = function(ngModule) {
-	    ngModule.config(function ($stateProvider, $urlRouterProvider) {
-
-	        $urlRouterProvider.otherwise('/home');
+	    ngModule.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+	        $locationProvider.html5Mode(true);
+	        $urlRouterProvider.otherwise('/');
 
 	        $stateProvider
 	            .state('home', {
 	                url: '/',
-	                templateUrl: 'index.html'
+	                templateUrl: '../views/home.html'
 	            })
-	            .state('home.settings', {
+	            .state('account', {
+	                url: '/account',
+	                templateUrl: '../views/account.html'
+	            })
+	            .state('settings', {
 	                url: '/settings',
-	                templateUrl: 'views/settings.html'
+	                templateUrl: '../views/settings.html'
 	            });
 	    })
 	};
