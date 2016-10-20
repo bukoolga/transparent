@@ -1,4 +1,5 @@
-var webpack = require('webpack');
+var WebpackDevServer = require("webpack-dev-server");
+var webpack = require("webpack");
 module.exports = {
     context: __dirname + "/app",
     entry: './index.js',
@@ -12,5 +13,16 @@ module.exports = {
             loader: 'ng-annotate!babel?presets[]=es2015!jshint',
             exclude: /node_modules|bower_components/
         }
-    ]
+    ],
+    // our Webpack Development Server config
+    devServer: {
+        historyApiFallback: true,
+        host: "0.0.0.0",
+        watchOptions: {
+            aggregateTimeout: 300,
+            poll: 1000
+        },
+        contentBase: 'app',
+        publicPath: '/__build__'
+    }
 };
